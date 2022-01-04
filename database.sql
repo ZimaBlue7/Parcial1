@@ -4,6 +4,7 @@
 CREATE DATABASE attendance;
 --\c into to attendance 
 --\c Create table admin 
+DROP TABLE if exists admin;
 CREATE TABLE admin(
     admin_id SERIAL PRIMARY KEY,
     contraseña VARCHAR(25) NOT NULL,
@@ -14,8 +15,16 @@ CREATE TABLE admin(
 INSERT INTO admin (admin_id, contraseña, asistencia)
 VALUES (id, 'contraseña', true);
 --\c visualize the elements in the table 
-SELECT *
+SELECT id,
+    asistencia
 FROM admin;
+--\c delete the elements case of the example 
+DELETE FROM admin
+where admin_id = 1;
+--\c update dates
+UPDATE admin
+set asistencia = true
+WHERE admin_id = 1;
 --\c Create table sedes
 CREATE TABLE sedes(
     sede_id SERIAL PRIMARY KEY,
