@@ -66,3 +66,4 @@ VALUES (intcodigo, 'nombre');
 --\c
 SELECT *
 FROM curso;
+--\c
