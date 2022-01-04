@@ -25,6 +25,9 @@ where admin_id = 1;
 UPDATE admin
 set asistencia = true
 WHERE admin_id = 1;
+--\c 
+ALTER TABLE table_name
+ADD COLUMN IF NOT EXISTS column_name INTEGER;
 --\c Create table sedes
 CREATE TABLE sedes(
     sede_id SERIAL PRIMARY KEY,
@@ -41,7 +44,8 @@ FROM sedes;
 CREATE TABLE estudiante(
     codigo_stud INTEGER PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL,
-    direccion VARCHAR(50)
+    direccion VARCHAR(50),
+    asistencia BOOLEAN
 );
 --\c
 INSERT INTO estudiante (nombre, direccion)
