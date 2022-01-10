@@ -44,8 +44,8 @@ FROM sedes;
 CREATE TABLE estudiante(
     codigo_stud INTEGER PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL,
-    direccion VARCHAR(50),
-    asistencia BOOLEAN
+    direccion VARCHAR(50) NOT NULL,
+    asistencia BOOLEAN NOT NULL default false
 );
 --\c
 INSERT INTO estudiante (nombre, direccion)
@@ -68,6 +68,19 @@ VALUES ('nombre', 'direccion', intsalario, 'eps', 'arl');
 --\c
 SELECT *
 FROM personal;
+--\c
+CREATE TABLE asistencia(
+    id_persona INTEGER PRIMARY KEY,
+    asistencia BOOLEAN NOT NULL default false,
+    fecha DATE NOT NULL,
+    hora VARCHAR(10)
+);
+--\c
+INSERT INTO asistencia(id_persona, asistencia, fecha, hora)
+VALUES (idpersona, BOOLEAN, date, 'hora');
+--\c
+SELECT *
+FROM asistencia;
 --\c
 CREATE TABLE curso(
     codigo INTEGER PRIMARY KEY,
