@@ -54,6 +54,7 @@ VALUES ('nombre', 'direccion');
 SELECT *
 FROM estudiante;
 --\c
+--\c
 CREATE TABLE personal(
     id_per SERIAL PRIMARY KEY,
     nombre VARCHAR(40) NOT NULL,
