@@ -1,0 +1,13 @@
+Toda esta informacion son el analisis del parcial el cual fue recortado, todo el codigo hecho fue trasladado a un nuevo proyecto, dejando como ejemplo las consultas hechas y los modulos instalados, tome en cuenta esta informacion como analisis para la aplicacion que esta en pausa, y sera completada.  
+
+Análisis : En el análisis de requerimientos nos podemos encontrar con varios puntos importantes para el correcto desarrollo de aplicación- nuestra base de datos.
+
+En primera instancia tenemos de tener en cuenta los puntos que se nos piden, puesto que tenemos administradores y estudiantes que usarán la aplicación, estos cuentan con diferentes datos para cada campo, como su identificador y su contraseña para el caso del administrador, además también teniendo en cuenta que estos asisten en diferentes sedes, de las cuales hacen también tenemos diferentes datos a tener en cuenta como el nombre, la ubicación y una identificación única. 
+
+De segunda medida tenemos la personal el cual también cuenta con diferentes características para un reconocimiento único, además que deben marcar asistencia en la sede de la que hacen parte, para esto se consideran diferentes atributos como el nombre, salario, su dirección, etc. En este campo también vienen incluido los profesores. 
+
+Un grupo distinto es el de los estudiantes los cuales mantienen su información única, también deben marcar asistencia. Ellos deben tener un código único, un nombre completo y una dirección, además que pueden estar matriculados en uno o varios cursos. 
+
+Un punto que no pierde relevancia, que es un requerimiento extremadamente importante para el funcionamiento total es la asistencia la cual viene dada para los estudiantes y para el personal, esta asistencia se marca teniendo en cuenta la sede, información adicional pero no menos importante como la hora y fecha en que se registra la misma. 
+
+Una palabra clave además de fundamental sería único/única, la aplicación deberá contar con un sistema fundamentado en la calidad, en la correlación de datos coherentes, la simplificación generalizada, y la prevención de la redundancia de datos, y sobre todo una clara búsqueda entre cualquier dato como si fuera una pesquisa.
